@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'footer';
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-family;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    img {
+        border-radius: 10px;
+        @include img-size(100%, auto);
+    }
+}
+
+.contact-form {
+    @extend %form-style;
+}

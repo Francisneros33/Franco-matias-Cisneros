@@ -1,0 +1,21 @@
+@mixin img-size($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}
+
+%form-style {
+    input, button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
